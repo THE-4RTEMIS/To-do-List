@@ -1,0 +1,194 @@
+html {
+  background: rgb(120, 90, 140);
+  background: linear-gradient(90deg, rgba(120, 90, 140, 1) 0%, rgba(180, 80, 80, 1) 50%, rgba(200, 150, 100, 1) 100%);
+}
+
+
+body{
+  font-family:Arial, Helvetica, sans-serif
+}
+
+h1{
+  font-weight: 1000;
+  color: white;
+}
+/* Centering the To-Do List */
+.todo-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  
+
+  /* Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+/* Input Section */
+
+.input-section {
+  background-color:aliceblue;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.tag-selector {
+  padding: 10px;
+  padding-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.add-btn {
+  background: #007bff;
+  border: none;
+  padding: 8px 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-btn:hover {
+  background: #0056b3;
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:aliceblue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Individual Task Item */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  gap: 10px;
+
+}
+
+
+.date {
+  position: absolute;
+  top: -6px;
+  right: 10px;
+  font-size: 12px;
+  color:#acacac;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 11111;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 10px;
+  overflow: hidden;
+}
+.button-group {
+  display: flex;
+  gap: 5px;
+}
+
+
+
+
+
+/* Checkbox */
+.checkbox {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+/* Task Text */
+.task-text {
+  flex-grow: 1;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 250px; 
+}
+
+
+.task-tag {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0; 
+}
+/* Edit & Delete Buttons */
+.edit-btn, .delete-btn, .pin-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  color: #ffc107;
+}
+
+.edit-btn:hover {
+  background: rgba(255, 193, 7, 0.2);
+}
+
+.delete-btn {
+  color: #dc3545;
+}
+
+.delete-btn:hover {
+  background: rgba(220, 53, 69, 0.2);
+}
+
+.pin-btn{
+  background-color: #dddddd00;
+  border-style: none;
+}
+
+.pin-btn:hover{
+  background: rgba(44, 105, 3, 0.616);
+}
